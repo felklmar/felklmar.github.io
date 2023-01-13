@@ -2,7 +2,7 @@
 
 /* Div containing text and button
    ( whole left text panel ) */
-.container {
+   .container {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,18 +25,16 @@ h1 {
     font-family: title_font;
     line-height: 0.5;
     font-size: 6em;
-    margin: 0em;
-    font-weight: bold;
+    margin: 0em 0em;
     text-transform: uppercase;
 }
 
 /* Subtitle ( "my signature" ) */
 h2 {
     font-family: title_font;
-    font-size: 1.5em;
-    margin: 0em 5em;
+    font-size: 1.25em;
+    margin: 0em 0em;
     color: #f3ec78;
-    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -51,6 +49,7 @@ p {
     font-family: text_font;
     margin: 1.5em 0.5em;
     font-size: 1.25em;
+    line-height: 1.2;
     color: #d9f8f8;
 }
 
@@ -67,7 +66,6 @@ p {
     color: #101010;
     display: flex;
     font-family: title_font;
-    font-weight: 700;
     font-size: 2em;
     justify-content: center;
     line-height: 1.75rem;
@@ -108,4 +106,3 @@ p {
         font-size: 2em;
     }
 }
-

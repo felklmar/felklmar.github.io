@@ -1,0 +1,109 @@
+/* Style of the page, mainly text on the left side */
+
+/* Div containing text and button
+   ( whole left text panel ) */
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 3em 4em;
+}
+
+/* Load title font from file */
+@font-face {
+    font-family: title_font;
+    src: url(fonts/BASQUIAT.otf);
+}
+
+/* Main title */
+h1 {
+    background-image: linear-gradient( 180deg, #f3ec78, #af4261 );
+    background-clip: text;
+    color: transparent;
+    font-family: title_font;
+    line-height: 0.5;
+    font-size: 6em;
+    margin: 0em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Subtitle ( "my signature" ) */
+h2 {
+    font-family: title_font;
+    font-size: 1.5em;
+    margin: 0em 5em;
+    color: #f3ec78;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Load text font from file */
+@font-face {
+    font-family: text_font;
+    src: url(fonts/Printvetica.otf);
+}
+
+/* Text paragraph */
+p {
+    font-family: text_font;
+    margin: 1.5em 0.5em;
+    font-size: 1.25em;
+    color: #d9f8f8;
+}
+
+/* Code bellow this comment was obtained from
+   website https://getcssscan.com/css-buttons-examples
+   where his author was listed as Alpine Day.
+
+   I just made some changes to the code to make
+   the button the way I wanted it to be.*/
+.button_gen {
+    background-color: #f3ec78;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    color: #101010;
+    display: flex;
+    font-family: title_font;
+    font-weight: 700;
+    font-size: 2em;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #af4261 solid;
+    width: 100%;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate( -2deg );
+    touch-action: manipulation;
+}
+
+.button_gen:focus {
+    outline: 0;
+}
+
+.button_gen:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #af4261;
+    bottom: 4px;
+    left: 4px;
+    width: calc( 100% - 1px );
+    height: calc( 100% - 1px );
+}
+
+.button_gen:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+@media ( min-width: 768px ) {
+    .button_gen {
+        padding: .75rem 3rem;
+        font-size: 2em;
+    }
+}

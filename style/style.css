@@ -2,7 +2,7 @@
 
 /* Div containing text and button
    ( whole left text panel ) */
-   .container {
+.container {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,17 +25,21 @@ h1 {
     font-family: title_font;
     line-height: 0.5;
     font-size: 6em;
-    margin: 0em 0em;
+    font-weight: normal;
     text-transform: uppercase;
+    padding: 0.5rem 0.5rem;
+    margin: -1rem 0em;
 }
 
 /* Subtitle ( "my signature" ) */
 h2 {
     font-family: title_font;
     font-size: 1.25em;
-    margin: 0em 0em;
     color: #f3ec78;
+    font-weight: normal;
     text-transform: uppercase;
+    padding: 0.25rem 0.25rem;
+    margin: 0em 0.25rem;
 }
 
 /* Load text font from file */
@@ -50,7 +54,9 @@ p {
     margin: 1.5em 0.5em;
     font-size: 1.25em;
     line-height: 1.2;
+    font-weight: normal;
     color: #d9f8f8;
+    padding: 0.5rem;
 }
 
 /* Code bellow this comment was obtained from
@@ -102,7 +108,9 @@ p {
 
 @media ( min-width: 768px ) {
     .button_gen {
-        padding: .75rem 3rem;
+        margin: 1rem;
+        padding: 1rem 3rem;
         font-size: 2em;
+        font-weight: normal;
     }
 }

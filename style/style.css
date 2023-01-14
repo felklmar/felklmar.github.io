@@ -13,7 +13,7 @@
 /* Load title font from file */
 @font-face {
     font-family: title_font;
-    src: url(fonts/BASQUIAT.otf);
+    src: url(../fonts/BASQUIAT.otf);
 }
 
 /* Main title */
@@ -41,7 +41,7 @@ h2 {
 /* Load text font from file */
 @font-face {
     font-family: text_font;
-    src: url(fonts/Printvetica.otf);
+    src: url(../fonts/Printvetica.otf);
 }
 
 /* Text paragraph */

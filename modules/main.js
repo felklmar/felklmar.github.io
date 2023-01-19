@@ -427,9 +427,12 @@ function download_scene() {
         scene,
         function( result ) {
             const blob = new Blob( [result] );
-            link.href = URL.createObjectURL(  blob );
+            link.href = URL.createObjectURL( blob );
             link.download = 'scene.glb';
             link.click();
+        },
+        function ( error ) {
+            console.log( error );
         },
         { binary: true }
     );

@@ -218,6 +218,15 @@ class Terrain {
         this.water_mesh.position.z = -5;
         scene.add( this.water_mesh );
 
+        this.terrain_material = new THREE.MeshPhongMaterial({
+                                        color: this.default_colors.terrain,
+                                        specular:0x222222,
+                                        shininess: 5,
+                                        map: this.textures.none,
+                                        wireframe: true,
+                                        side: THREE.DoubleSide,
+                                });
+
         // initial terrain generation
         this.terrain_mesh;
         this.generate();
@@ -272,17 +281,8 @@ class Terrain {
         // compute the vertices normals for correct light refraction
         terrain_geometry.computeVertexNormals();
 
-        const terrain_material = new THREE.MeshPhongMaterial({
-                                        color: this.default_colors.terrain,
-                                        specular:0x222222,
-                                        shininess: 5,
-                                        map: this.textures.none,
-                                        wireframe: true,
-                                        side: THREE.DoubleSide,
-                                 });
-
         // create terrain mesh
-        this.terrain_mesh = new THREE.Mesh( terrain_geometry, terrain_material );
+        this.terrain_mesh = new THREE.Mesh( terrain_geometry, this.terrain_material );
 
         // rotate terrain mesh to fit in the scene and add it to scene
         this.terrain_mesh.rotateX( -Math.PI/2 );
@@ -333,7 +333,7 @@ terrain_folder.add( terrain, 'max_height', 0, 50, 0.1 )
               .onChange( function() { terrain.generate(); } );
 
 // terrain roughness ( slider )
-terrain_folder.add( terrain, 'roughness', 5, 100, 0.1 )
+terrain_folder.add( terrain, 'roughness', 2, 100, 0.1 )
               .name( 'Roughness' )
               .onChange( function() { terrain.generate(); } );
 
@@ -341,7 +341,7 @@ terrain_folder.add( terrain, 'roughness', 5, 100, 0.1 )
 const material_folder = gui.addFolder( 'Terrain Surface' );
 
 // toggles terrain wireframe ( checkbox )
-material_folder.add( terrain.terrain_mesh.material, 'wireframe' ).name( 'Wireframe' );
+material_folder.add( terrain.terrain_material, 'wireframe' ).name( 'Wireframe' );
 
 // changes terrain texture ( dropdown )
 material_folder.add( settings, 'terrain_texture',

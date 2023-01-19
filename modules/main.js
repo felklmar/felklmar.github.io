@@ -431,9 +431,7 @@ function download_scene() {
             link.download = 'scene.glb';
             link.click();
         },
-        function ( error ) {
-            console.log( error );
-        },
+        function ( error ) {},
         { binary: true }
     );
 }

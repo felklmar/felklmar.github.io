@@ -218,6 +218,7 @@ class Terrain {
         this.water_mesh.position.z = -5;
         scene.add( this.water_mesh );
 
+        // terrain material is set separately to prevent its change when terrain is regenerated
         this.terrain_material = new THREE.MeshPhongMaterial({
                                         color: this.default_colors.terrain,
                                         specular:0x222222,

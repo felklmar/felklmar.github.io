@@ -44,11 +44,11 @@ Samotný terén je reprezentovaný pomocí třídy Terrain, který obsahuje info
 
 ### Ukázka textur
 
-<img src = "./terrain_generator/textures/dirt.jpg"  width = "200" height = "200" alt = "Dirt texture"  title = "Dirt texture" >
-<img src = "./terrain_generator/textures/grass.jpg" width = "200" height = "200" alt = "Grass texture" title = "Grass texture" >
-<img src = "./terrain_generator/textures/rock.jpg"  width = "200" height = "200" alt = "Rock texture"  title = "Rock texture" >
-<img src = "./terrain_generator/textures/snow.jpg"  width = "200" height = "200" alt = "Snow texture"  title = "Snow texture" >
-<img src = "./terrain_generator/textures/water.png" width = "200" height = "200" alt = "Water texture" title = "Water texture" >
+<img src = "./textures/dirt.jpg"  width = "200" height = "200" alt = "Dirt texture"  title = "Dirt texture" >
+<img src = "./textures/grass.jpg" width = "200" height = "200" alt = "Grass texture" title = "Grass texture" >
+<img src = "./textures/rock.jpg"  width = "200" height = "200" alt = "Rock texture"  title = "Rock texture" >
+<img src = "./textures/snow.jpg"  width = "200" height = "200" alt = "Snow texture"  title = "Snow texture" >
+<img src = "./textures/water.png" width = "200" height = "200" alt = "Water texture" title = "Water texture" >
 
 ## Generování terénu
 
